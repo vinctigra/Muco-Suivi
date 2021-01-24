@@ -36,6 +36,7 @@ public class PatientDaoJdbcImpl implements PatientDao{
 		      }
 		}catch(DalException e) {
 			e.printStackTrace();
+			throw new DalException("erreur lors de l'insertion du patient insert" + e);
 		}
 		return patientRetourner;
 	}
@@ -60,6 +61,7 @@ public class PatientDaoJdbcImpl implements PatientDao{
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
+			throw new DalException("erreur lors de la selection du patient selectById" + e);
 		}
 		return patientRetourner;
 	}
