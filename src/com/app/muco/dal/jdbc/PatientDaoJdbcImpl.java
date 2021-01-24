@@ -1,5 +1,7 @@
 package com.app.muco.dal.jdbc;
 
-public class PatientDaoJdbcImpl {
+import com.app.muco.dal.PatientDao;
+
+public class PatientDaoJdbcImpl implements PatientDao{
 
 }
