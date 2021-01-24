@@ -4,10 +4,9 @@ public class Patient extends Personne {
 	private int sante;
 
 	
-	public Patient(int id, String nom, String prenom, String email, String motDePasse, String admin, int sante) {
-		super(id, nom, prenom, email, motDePasse, admin);
+	public Patient(int id, String nom, String prenom, String email, String motDePasse, int sante) {
+		super(id, nom, prenom, email, motDePasse);
 		this.sante = sante;
-	
 	}
 
 	public Patient( String nom, String prenom, String email, String motDePasse, int sante) {
